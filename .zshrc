@@ -1,4 +1,4 @@
-PROMPT="%B%m %~ λ %b"
+PROMPT="%Ba glass cat %~ λ %b"
 
 export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:/Users/jonas/Library/Python/3.9/bin

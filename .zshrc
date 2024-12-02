@@ -3,6 +3,7 @@ PROMPT="%Ba glass cat %~ λ %b"
 export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:/Users/jonas/Library/Python/3.9/bin
 export PATH=$PATH:/Users/jonas/bin
+export PATH=$PATH:/Users/jonas/.cargo/bin
 
 alias firefox='open /Applications/Firefox.app'
 alias code='open -b com.microsoft.VSCode "$@"'
@@ -32,11 +33,15 @@ sync_resume() {
   git commit -m "$commit_msg"
   git push
 
+  cd - > /dev/null
+
   cd "$portfolio_dir" || return
   cp "${resume_dir}/Jonas_Groening_resume.pdf" public/Jonas_Groening_resume.pdf
   git add .
   git commit -m "$commit_msg"
   git push
+
+  cd - > /dev/null
 
   echo "\n ======== Sync completed successfully. ===========\n"
 }
@@ -49,3 +54,6 @@ countlines () {
   END { printf("%d files changed, %d insertions(+), %d deletions(-)", f, i, d) }'
 }
 
+
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

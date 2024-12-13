@@ -38,7 +38,7 @@ sync_resume() {
   cd "$portfolio_dir" || return
   cp "${resume_dir}/Jonas_Groening_resume.pdf" public/Jonas_Groening_resume.pdf
   git add .
-  git commit -m "$commit_msg"
+  git commit -m "Resume: $commit_msg"
   git push
 
   cd - > /dev/null
@@ -57,3 +57,4 @@ countlines () {
 
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+. "/Users/jonas/.deno/env"

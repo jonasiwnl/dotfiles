@@ -1,0 +1,12 @@
+command_timeout = 10000
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[golang]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true

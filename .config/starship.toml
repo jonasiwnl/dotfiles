@@ -1,4 +1,12 @@
+command_timeout = 10000
+
 "$schema" = 'https://starship.rs/config-schema.json'
 
-[kubernetes]
-disabled = false
+[golang]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
